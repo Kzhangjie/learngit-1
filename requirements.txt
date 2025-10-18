@@ -1,0 +1,10 @@
+python-dotenv
+tqdm
+pandas
+requests
+bs4
+IPython
+matplotlib
+pyecharts
+sseclient-py
+schedule

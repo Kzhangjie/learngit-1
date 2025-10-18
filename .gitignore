@@ -1,0 +1,10 @@
+.env
+__pycache__/
+*.log
+logs
+*.pdf
+mnt_logs/
+.ipynb_checkpoints/
+renfangchao/canvas/gen_1_answer_dp*.py
+.vscode/setting.json
+.kllm.toml

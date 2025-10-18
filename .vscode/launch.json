@@ -1,0 +1,53 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python 调试程序: 当前文件",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal",
+            "cwd": "${workspaceFolder}\\kuangzhirong"
+        },
+        {
+            "name": "main",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/project/da_ques_categorize/main.py",
+            "cwd": "${workspaceFolder}",
+            "console": "integratedTerminal",
+            "env": {
+                "WPS_SID": "xx",
+                "PYTHONPATH": "${workspaceFolder}",
+                "GATEWAY_URL_V2": "https://ai-copilot-gateway.ksord.com",
+                "AI_GATEWAY_TOKEN_V2": "5ZEXz9TgrGDtr5SUnh5psi8ZtdJTw9Iz",
+                "AI_GATEWAY_PRODUCT_NAME_V2": "kdocs-as-baseserver",
+                "AI_GATEWAY_INTENTION_CODE_V2": "kdocs_airsheet_generate_formula",
+                "AI_GATEWAY_UID_V2": "1385942755",
+                "USER_DATA_FILE": "D://PE//case_info.xlsx",
+                "ARK_API_KEY": "a14762f1-ae88-44c9-9a28-17d6aaffb8b3"
+            }
+        },
+        {
+            "name": "Python: Streamlit",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/.venv/Scripts/streamlit.exe",
+            "args": [
+            "run",
+            "${file}"
+            ],
+            "console": "integratedTerminal",
+            "env": {
+                "INNER_SID": "V02SUeo-HsVzI_QcLUTtuHNwlTpJ4WU00a44edb80010e123c0",
+                "TEST_DATA_FOLDER": "${workspaceFolder}/project/shangtang/test_data",
+                "SHANGTANG_TOKEN": "Raccoon2B-24321BBOiekvA7n3Vm7D3CmZn5eJ6ARDsai8IwIORXel6eRu08mW1hfjLqTELZ",
+                "SHANGTANG_TOKEN_STAGE": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjIwMzQwNTc2NjEsImlzcyI6Ijg2IiwibmFtZSI6IlJhY2Nvb25DaGxvZSIsIm5hdGlvbl9jb2RlIjoiODYiLCJuYmYiOjE3MTg2OTc2NTYsInNpZCI6ImxsbTYxYjI1N2I5NzNhZDY4NjFmNTI5ZDFlLTI1OWYtNGNlYi1iOGVlLTY4ZjFkYmMxNTg3YiJ9.FMRQ6zl5bo9FCgmlPRb4YXeK7EOk56pJRh6BjIvCY5k",
+                "SHANGTANG_ONLINE_TOKEN": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjIwMjAyODIwNjgsImlzcyI6IjhiNDMiLCJuYW1lIjoiUmFjY29vbkFpZGVuIiwibmF0aW9uX2NvZGUiOiI4NiIsIm5iZiI6MTcwOTI0MjA2Mywic2lkIjoibG02MTI4YmVlNWE1ZmUyOGI0M2E5ODczOGI0LWI1ZWEtNDU1MS1iYTRiLTBjYTZjYjdmY2ViZSJ9.5svGwQu93GBCp9GEnSLP4B_HnZeZaKPZZ04gOijrVNI",
+                "DEEPSEEK_SK": "sk-ac80b4ca2912498c95777d52ad39f390",
+                "COT_MODEL": "deepseek-chat",
+                "WITH_SENSETIME_SUMMARY": "True",
+            }
+        }
+    ]
+}

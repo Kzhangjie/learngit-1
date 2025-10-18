@@ -1,0 +1,13 @@
+#!/bin/sh
+# 检查所有暂存的.py文件中是否包含"V02"开头的字符串
+files=$(git diff --cached --name-only --diff-filter=ACMR | grep '\.py$')
+if [ -n "$files" ]; then
+    for file in $files; do
+        # 搜索以"V02"开头的行（例如"V02xxx"）
+        if grep -q -E 'V02S' "$file"; then
+            echo "Error: Found WPS_SID prefix in $file. Commit blocked." >&2
+            exit 1  # 非零退出码阻止提交
+        fi
+    done
+fi
+exit 0  # 检查通过，允许提交
